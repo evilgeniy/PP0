@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lr3</string>
+    <string name="title_activity_main">Заметки</string>
+
+    <string name="note_it_all_here">Поток мыслей...</string>
+    <string name="empty_notes_message">Здесь еще нет заметок</string>
+    <string name="done">Записать</string>
+    <string name="tags">Тэги</string>
+    <string name="title">Название</string>
+    <string name="search_for_tags">Поиск по тэгу</string>
+    <string name="delete">Удалить</string>
+    <string name="sort_notes">Отсортировать заметки</string>
+    <string name="title_hint">Название</string>
+</resources>

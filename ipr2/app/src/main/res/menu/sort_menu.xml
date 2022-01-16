@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/by_title_option"
+        android:title="По названию" />
+    <item
+        android:id="@+id/by_date_option"
+        android:title="По дате" />
+</menu>

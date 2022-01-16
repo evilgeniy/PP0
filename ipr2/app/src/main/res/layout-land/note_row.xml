@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="215dp"
+    android:layout_height="180dp">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorCardBackground"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/note_header_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/header_size"
+                android:textColor="@color/colorBlack"
+                android:layout_marginHorizontal="@dimen/card_text_margin"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/note_сontent_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:ellipsize="marquee"
+                android:text="TextView"
+                android:textSize="@dimen/content_size"
+                android:layout_marginHorizontal="@dimen/card_text_margin"
+                tools:text="@tools:sample/lorem/random" />
+            <ImageButton
+                android:id="@+id/delete_landscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/delete"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/ic_delete_primary_24dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_margin="7dp"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
